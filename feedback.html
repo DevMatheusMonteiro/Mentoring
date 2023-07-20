@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mentoria - Avaliação</title>
+  </head>
+  <body>
+    <header class="feedback-header">
+      <a class="link" href="index.html">Marque sua mentoria</a>
+
+      <div class="container">
+        <h1>Avalie a sua mentoria</h1>
+        <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+        <img
+          id="speech-bubble"
+          src="images/speech-bubble.svg"
+          alt="Balão de diálogo"
+        />
+      </div>
+    </header>
+    <main class="feedback-main">
+      <form action="#" method="get" id="feedback-form" class="container">
+        <fieldset>
+          <legend>Informações Pessoais</legend>
+          <div class="fieldset-wrapper">
+            <div class="name-lastname-wrapper">
+              <div class="input-wrapper">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="lastname">Sobrenome</label>
+                <input type="text" name="lastname" id="lastname" required />
+              </div>
+            </div>
+            <div class="input-wrapper">
+              <label for="email">
+                Email <small>(digite um email válido)</small>
+              </label>
+              <input type="email" name="email" id="email" required />
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Informações do Mentor</legend>
+          <div class="fieldset-wrapper">
+            <div class="mentor-wrapper">
+              <label for="select-mentor">Selecione quem foi o seu mentor</label>
+              <select name="select-mentor" id="select-mentor" required>
+                <option value="" hidden></option>
+                <option value="tiago">Tiago</option>
+                <option value="roberto">Roberto</option>
+                <option value="fernanda">Fernanda</option>
+                <option value="juliana">Juliana</option>
+                <option value="igor">Igor</option>
+              </select>
+            </div>
+            <div class="mentor-wrapper">
+              <label for="feedback-mentor">Feedback sobre o mentor</label>
+              <textarea name="feedback-mentor" id="feedback-mentor"></textarea>
+            </div>
+            <div class="mentor-checkbox-wrapper">
+              <input type="checkbox" name="no-doubt" id="no-doubt" />
+              <label for="no-doubt">
+                Todas as minhas dúvidas foram esclarecidos durante a mentoria.
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Agendando próxima mentoria</legend>
+          <div class="fieldset-wrapper">
+            <div class="datetime-wrapper">
+              <div class="input-wrapper area-a">
+                <label for="next-date">
+                  Data <small>(DD/MM/AAAA)</small>
+                </label>
+                <input type="date" name="next-date" id="next-date" />
+              </div>
+              <div class="input-wrapper area-b">
+                <label for="next-begin">Das</label>
+                <input type="time" name="next-begin" id="next-begin" />
+              </div>
+              <div class="input-wrapper area-c">
+                <label for="next-end">Até</label>
+                <input type="time" name="next-end" id="next-end" />
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <button>Salvar</button>
+      </form>
+    </main>
+  </body>
+</html>
