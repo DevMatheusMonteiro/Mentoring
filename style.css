@@ -281,7 +281,6 @@ footer {
 select {
   appearance: none;
   -webkit-appearance: none;
-  -moz-appearance: none;
   background-image: url(images/select-arrow.svg);
   background-repeat: no-repeat;
   background-position: top 50% right 16px;
