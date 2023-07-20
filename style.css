@@ -55,6 +55,7 @@ header h1 {
 header p {
   font-size: 1.25rem;
 }
+
 .container {
   max-width: 750px;
   margin: 0 auto;
@@ -333,7 +334,7 @@ select {
 /* Feedback */
 
 /* Responsive */
-@media (max-width: 660px) {
+@media screen and (max-width: 660px) {
   form .name-lastname-wrapper {
     flex-direction: column;
     justify-content: flex-start;
@@ -342,7 +343,7 @@ select {
   }
 }
 
-@media (max-width: 625px) {
+@media screen and (max-width: 625px) {
   form .datetime-wrapper {
     grid-template-areas:
       "area-a area-a"
@@ -351,7 +352,13 @@ select {
   }
 }
 
-@media (max-width: 420px) {
+@media screen and (max-width: 504px) {
+  .feedback-header {
+    margin-top: 77px;
+  }
+}
+
+@media screen and (max-width: 420px) {
   form .datetime-wrapper {
     grid-template-areas:
       "area-a"
@@ -360,4 +367,72 @@ select {
     grid-template-columns: 1fr;
   }
 }
+
+@media screen and (max-width: 396px) {
+  .feedback-header {
+    margin-top: 98px;
+  }
+
+  .feedback-header h1 {
+    font-size: 2.5rem;
+  }
+
+  #speech-bubble {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 368px) {
+  .index-header {
+    margin-top: 110px;
+  }
+}
+
+@media screen and (max-width: 332px) {
+  .feedback-header {
+    margin-top: 48px;
+  }
+}
+
+@media screen and (max-width: 276px) {
+  .feedback-header {
+    margin-top: 146px;
+  }
+
+  .feedback-header h1 {
+    font-size: 1.7rem;
+  }
+
+  .feedback-header p {
+    font-size: 1rem;
+  }
+
+  #speech-bubble {
+    max-width: 150px;
+  }
+}
+
+@media screen and (max-width: 265px) {
+  .index-header {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 242px) {
+  :root {
+    font-size: 14px;
+  }
+  .index-header {
+    margin-top: 107px;
+  }
+
+  .feedback-header {
+    margin-top: 172px;
+  }
+
+  #speech-bubble {
+    max-width: 120px;
+  }
+}
+
 /* Responsive */
