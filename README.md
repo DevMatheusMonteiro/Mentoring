@@ -7,6 +7,6 @@ Responsive web page
 - Responsive
 - Forms
 
-### Autores
+### Authors
 
 - [@DevMatheusMonteiro](https://github.com/DevMatheusMonteiro)
